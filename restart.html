@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html 복습 버전 페이지</title>
+</head>
+<body>
+    <!-- html 복습 버전 -->
+    <header><h1> 은택의 자기소개 </h1></header><br>
+    <h4> html을 혼자서 해보자</h4> <hr>
+
+    <nav>
+        <h5>내가 자주 이용하는 사이트</h5> <br>
+    <ul>
+        <li> <a href="https://www.instagram.com/"> instagram</a></li>
+        <li><a href="www.naver.com">naver</a></li>
+        <li><a href="https://www.youtube.com/">Utube</a></li>
+        <li><a href="https://wrtn.ai/">뤼튼</a></li>
+    </ul></nav>
+    <main>
+        <form>
+            <fieldset>
+                <table>
+                    <legend>내 정보들</legend>
+                <tr>
+                    <th><label for="이름">이름</label></th>
+                    <td colspan="2"><input type="text" id="이름"><br> <!-- label의 "이름"과 input의 id "이름"이 같은 것으로 이 둘은 하나의 정보를 받고있고 연결되어있음을 증명--></td>
+                </tr>
+                <tr>
+                    <th><label for="전화번호">전화번호</label></th>
+                    <td colspan="2"><input type="text" id="전화번호"><br></td>
+                </tr>
+                <tr>
+                    <th><label for="mbti">mbti</label></th>
+                    <td colspan="2"><input type="text" id="mbti"><br></td>
+                </tr>
+                <tr>
+                    <th>성별</th>
+                    <td><label for="man">남자</label> <input type="radio" id="man" name="gender" value="m"> <!-- 이전 label for 값과 input id의 값으로 서로 연결이 되었고, 
+                        radio 버튼으로 name과 value의 속성이 생겼으며 name은 이 두 라디오 버튼이 같은 gender를 표현함을 알려주고 value는 m이냐 w냐에 따라서 
+                        gender = m 혹은 gender = w의 값을 서버에 전송한다" -->
+                        <label for="woman">여자</label>
+                        <input type="radio" name="gender" id="woman" value="w"></td>
+                </tr>
+                <tr>
+                    <th>학과</th>
+                    <td><select>
+                        <option>컴퓨터공학과</option>
+                        <option>미디어소프트웨어과</option>
+                        <option>정보통신공학과</option>
+                        </select><br></td>
+                </tr>
+                <tr>
+                    <th rowspan="2">자신있는 과목</th>
+                    <td><input type="checkbox" name="웹사이트구현" id="html"><label for="html">html</label></td>
+                    <td><input type="checkbox" name="웹사이트꾸미기" id="css"><label for="css">css</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="백엔드" id="backend"><label for="backend">백엔드</label></td>
+                    <td><input type="checkbox" name="프론트엔드" id="frontend"><label for="frontend">프론트엔드</label></td>
+                </tr>
+                <tr>
+                    <th></th>
+
+                    <td><input type="submit" value="제출">
+                        <input type="reset" value="초기화"></td>
+                </tr>
+                </table>
+
+            </fieldset>
+
+        </form>
+        <hr>
+        <footer>
+        <div><a href="mailto:ahtp8155@naver.com">이메일</a>
+            <a href="https://github.com/">github</a></div>
+
+        <hr><br>
+        <a href="#top">상단으로</a>
+        </footer>
+
+    </main>
+
+</body>
+</html>
